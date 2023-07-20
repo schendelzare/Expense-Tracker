@@ -10,7 +10,7 @@ const emailManager = async (email, text, html, subject) => {
       pass: "803fb864bf7de3",
     },
   });
-  transport.sendMail({
+   await transport.sendMail({
     to: email,
     from: "info@expensetracker.com",
     text: text,
